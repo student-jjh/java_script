@@ -7,8 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="button" value="Write" onclick="alert('hi')">
-    <input type='text' onchange="alert('changed')">
-    <input type="text" onkeydown="alert=('key_down')">
+    <h1>HI STUDY JAVA SCRIPT</h1>
+    <input type="button" value="night" onclick='
+        document.querySelector("body").style.backgroundColor="black"
+        document.querySelector("body").style.color="white"
+    '>
+    
+    <input type="button" value="day" onclick='
+    document.querySelector("body").style.backgroundColor="white"
+    document.querySelector("body").style.color="black"
+    '>
+    <input type="button" value="night" onclick="
+    if (this.value==='night'){
+        document.querySelector('body').style.backgroundColor='black'
+        document.querySelector('body').style.color='white'
+        this.value='day'
+    } else{
+    document.querySelector('body').style.backgroundColor='white'
+    document.querySelector('body').style.color='black'
+    this.value='night'
+    }
+    ">
 </body>
-</html>
+</html> 
