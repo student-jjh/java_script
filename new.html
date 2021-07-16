@@ -8,23 +8,15 @@
 </head>
 <body>
     <h1>HI STUDY JAVA SCRIPT</h1>
-    <input type="button" value="night" onclick='
-        document.querySelector("body").style.backgroundColor="black"
-        document.querySelector("body").style.color="white"
-    '>
-    
-    <input type="button" value="day" onclick='
-    document.querySelector("body").style.backgroundColor="white"
-    document.querySelector("body").style.color="black"
-    '>
     <input type="button" value="night" onclick="
+    var target = document.querySelector('body')
     if (this.value==='night'){
-        document.querySelector('body').style.backgroundColor='black'
-        document.querySelector('body').style.color='white'
+        target.style.backgroundColor='black'
+        target.style.color='white'
         this.value='day'
     } else{
-    document.querySelector('body').style.backgroundColor='white'
-    document.querySelector('body').style.color='black'
+    target.style.backgroundColor='white'
+    target.style.color='black'
     this.value='night'
     }
     ">
